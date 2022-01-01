@@ -1,0 +1,85 @@
+table{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	background: #fff;
+	margin:40px auto;
+	border-collapse: collapse;
+	display: block;
+	width: 90%;
+}
+
+table tbody, table tr, table td{
+	display: block;
+	width: 80%;
+	margin:auto;
+}
+
+table tbody tr td{
+	text-align: center;
+	font-size: 18px;
+	font-weight: medium;
+	letter-spacing: 0.35px;
+	padding: 8px;
+	position: relative;
+}
+
+table tbody tr{
+	margin-bottom: 35px;
+	box-shadow: 0px 4px 20px rgba(5,57,94,.5);
+	border-top: #ff1046;
+	border-bottom: 4px solid #900c3f;
+	border-radius: 10px; 
+	transition-duration: 0.3s;
+}
+
+table tbody tr:hover{
+	transform:translateY(15px);
+}
+
+.btn{
+	width: 160px;
+	font-size: 16px;
+	text-decoration: none;
+	line-height: 40px;
+	display: inline-block;
+	border:2px solid #ff1046;
+	font-weight: bold;
+	color:#ff1046;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	-webkit-transition-duration:0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+}
+.btn:hover, .btn:active, .btn:focus{
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	-webkit-transform:scale(1.1);
+	transform: scale(1.1);
+}
+
+@media (max-width: 768px){
+}
+
+.name{
+	font-size: 22px;
+	font-weight: bold;
+	transition-duration: 0.3s;
+}
+
+.name:hover{
+	text-shadow: -1px -1px #ff1046, 1px -1px #ff1046, -1px 1px #ff1046, 1px 1px #ff1046;
+	color:white;
+}
+.company{
+	font-size: 18px;
+	font-weight: bold;
+	text-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.company::first-letter{
+	color:#ff1046;
+}
